@@ -1,4 +1,3 @@
-
 import csv
 import json
 import random
@@ -121,9 +120,10 @@ def insert_members(teams, total_teams, members):
     current_max_members = max([len(team) for team in teams])
     total_members = len(members)
     empty_slots = sum([current_max_members - len(team) for team in teams])
-    max_members = (total_members - empty_slots) // total_teams + current_max_members
+    remaining_members = (total_members - empty_slots)
+    max_members = remaining_members // total_teams + current_max_members
 
-    if (total_members - empty_slots) % total_teams > 0:
+    if remaining_members % total_teams > 0:
         max_members += 1
 
     while total_members > 0:
