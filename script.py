@@ -40,7 +40,7 @@ def get_lacking_division(teams, division):
 def recommended_team(
         teams,
         currrent_division,
-        on_lacking_divisions=False,
+        on_divisions=False,
         excluded_teams_index=[]):
     """
     Returns an index on which team is best suited to be append upon.
@@ -67,7 +67,7 @@ def recommended_team(
         return random.choice(recommended_teams)
 
 
-    if on_lacking_divisions and len(lacking_divisions) > 0:
+    if on_divisions and len(lacking_divisions) > 0:
         current_idx = lacking_divisions[0]
         current_amount = len(teams[current_idx])
 
@@ -111,28 +111,30 @@ def insert_members(teams, total_teams, members):
 
     current_maximum_members = max([len(team) for team in teams])
     maximum_members_per_team = current_maximum_members
-    remainding_members = len(members)
+    members_remain = len(members)
     empty_slots = 0
 
     for team in teams:
         empty_slots += current_maximum_members - len(team)
 
-    maximum_members_per_team += (len(members) - empty_slots) // total_teams
+    maximum_members_per_team += (members_remain - empty_slots) // total_teams
 
-    if (len(members) - empty_slots) % total_teams > 0:
+    if (members_remain - empty_slots) % total_teams > 0:
         maximum_members_per_team += 1
 
-    while remainding_members > 0:
-        random_idx = random.randint(0, remainding_members - 1)
+    while members_remain > 0:
+        random_idx = random.randint(0, members_remain - 1)
         member = members.pop(random_idx)
-        is_by_division = remainding_members >= threshold
+        is_by_division = members_remain >= threshold
         excluded_teams_index = [idx for idx, team in enumerate(teams)
                                 if len(team) >= maximum_members_per_team]
+
+        # get the recommended team's index
         idx = recommended_team(teams, member['division'],
                                is_by_division, excluded_teams_index)
 
         teams[idx].append(member)
-        remainding_members -= 1
+        members_remain -= 1
 
 
 def generate_upgrading_teams(members, total_teams, excluded_divisions=[]):
