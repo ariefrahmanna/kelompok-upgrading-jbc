@@ -119,24 +119,24 @@ def insert_members(teams, total_teams, members):
     threshold = 5
 
     current_max_members = max([len(team) for team in teams])
-    members_remain = len(members)
+    total_members = len(members)
     empty_slots = sum([current_max_members - len(team) for team in teams])
-    max_members = (members_remain - empty_slots) // total_teams + current_max_members
+    max_members = (total_members - empty_slots) // total_teams + current_max_members
 
-    if (members_remain - empty_slots) % total_teams > 0:
+    if (total_members - empty_slots) % total_teams > 0:
         max_members += 1
 
-    while members_remain > 0:
-        random_idx = random.randint(0, members_remain - 1)
+    while total_members > 0:
+        random_idx = random.randint(0, total_members - 1)
         member = members.pop(random_idx)
-        is_by_division = members_remain >= threshold
+        is_by_division = total_members >= threshold
 
         # get the recommended team's index
         idx = recommended_team(teams, member['division'],
                                is_by_division, max_members)
 
         teams[idx].append(member)
-        members_remain -= 1
+        total_members -= 1
 
 
 def generate_upgrading_teams(members, total_teams, excluded_divisions=[]):
