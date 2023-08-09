@@ -110,13 +110,14 @@ def insert_members(teams, total_teams, members):
     threshold = 5
 
     current_maximum_members = max([len(team) for team in teams])
+    maximum_members_per_team = current_maximum_members
+    remainding_members = len(members)
     empty_slots = 0
 
     for team in teams:
         empty_slots += current_maximum_members - len(team)
 
-    maximum_members_per_team = (len(members) - empty_slots) // total_teams + current_maximum_members
-    remainding_members = len(members)
+    maximum_members_per_team += (len(members) - empty_slots) // total_teams
 
     if (len(members) - empty_slots) % total_teams > 0:
         maximum_members_per_team += 1
