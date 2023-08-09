@@ -41,7 +41,7 @@ def recommended_team(
         teams,
         currrent_division,
         on_divisions=False,
-        excluded_teams_index=[]):
+        maximum_members=None):
     """
     Returns an index on which team is best suited to be append upon.
 
@@ -52,6 +52,12 @@ def recommended_team(
 
     lacking_teams = get_lacking_teams(teams)
     lacking_divisions = get_lacking_division(teams, currrent_division)
+    excluded_teams_index = []
+
+    if maximum_members is not None:
+        excluded_teams_index = [idx for idx, team in enumerate(teams)
+                                if len(team) >= maximum_members]
+
 
     for excluded_team_index in excluded_teams_index:
         if excluded_team_index in lacking_teams:
@@ -109,29 +115,22 @@ def insert_members(teams, total_teams, members):
     # minimum amount of members needed to be inserted based on division
     threshold = 5
 
-    current_maximum_members = max([len(team) for team in teams])
-    maximum_members_per_team = current_maximum_members
+    current_max_members = max([len(team) for team in teams])
     members_remain = len(members)
-    empty_slots = 0
-
-    for team in teams:
-        empty_slots += current_maximum_members - len(team)
-
-    maximum_members_per_team += (members_remain - empty_slots) // total_teams
+    empty_slots = sum([current_max_members - len(team) for team in teams])
+    max_members = (members_remain - empty_slots) // total_teams + current_max_members
 
     if (members_remain - empty_slots) % total_teams > 0:
-        maximum_members_per_team += 1
+        max_members += 1
 
     while members_remain > 0:
         random_idx = random.randint(0, members_remain - 1)
         member = members.pop(random_idx)
         is_by_division = members_remain >= threshold
-        excluded_teams_index = [idx for idx, team in enumerate(teams)
-                                if len(team) >= maximum_members_per_team]
 
         # get the recommended team's index
         idx = recommended_team(teams, member['division'],
-                               is_by_division, excluded_teams_index)
+                               is_by_division, max_members)
 
         teams[idx].append(member)
         members_remain -= 1
