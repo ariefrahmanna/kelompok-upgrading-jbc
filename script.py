@@ -1,3 +1,4 @@
+
 import csv
 import json
 import random
@@ -36,7 +37,11 @@ def get_lacking_division(teams, division):
             if len(filtered_team) == minimum]
 
 
-def recommended_team(teams, currrent_division, on_lacking_division=False):
+def recommended_team(
+        teams,
+        currrent_division,
+        on_lacking_divisions=False,
+        excluded_teams_index=[]):
     """
     Returns an index on which team is best suited to be append upon.
 
@@ -46,22 +51,28 @@ def recommended_team(teams, currrent_division, on_lacking_division=False):
     """
 
     lacking_teams = get_lacking_teams(teams)
-    lacking_division = get_lacking_division(teams, currrent_division)
+    lacking_divisions = get_lacking_division(teams, currrent_division)
+
+    for excluded_team_index in excluded_teams_index:
+        if excluded_team_index in lacking_teams:
+            lacking_teams.remove(excluded_team_index)
+        if excluded_team_index in lacking_divisions:
+            lacking_divisions.remove(excluded_team_index)
 
     # get intersection of lacking teams and member's division
-    recommended_teams = list(set(lacking_teams).intersection(lacking_division))
+    recommended_teams = list(set(lacking_teams).intersection(lacking_divisions))
 
     # returns any reccomended teams if any intersection exist
     if len(recommended_teams) > 0:
         return random.choice(recommended_teams)
 
 
-    if on_lacking_division:
-        current_idx = lacking_division[0]
+    if on_lacking_divisions and len(lacking_divisions) > 0:
+        current_idx = lacking_divisions[0]
         current_amount = len(teams[current_idx])
 
         # update curr_idx to the least membered team
-        for idx in lacking_division:
+        for idx in lacking_divisions:
             amount = len(teams[idx])
 
             if current_amount > amount:
@@ -86,7 +97,7 @@ def recommended_team(teams, currrent_division, on_lacking_division=False):
     return current_idx
 
 
-def insert_members(teams, members):
+def insert_members(teams, total_teams, members):
     """
     Inserts the teams list with the members.
     Note that the variable `teams` will be updated.
@@ -98,13 +109,26 @@ def insert_members(teams, members):
     # minimum amount of members needed to be inserted based on division
     threshold = 5
 
+    current_maximum_members = max([len(team) for team in teams])
+    empty_slots = 0
+
+    for team in teams:
+        empty_slots += current_maximum_members - len(team)
+
+    maximum_members_per_team = (len(members) - empty_slots) // total_teams + current_maximum_members
     remainding_members = len(members)
+
+    if (len(members) - empty_slots) % total_teams > 0:
+        maximum_members_per_team += 1
 
     while remainding_members > 0:
         random_idx = random.randint(0, remainding_members - 1)
         member = members.pop(random_idx)
         is_by_division = remainding_members >= threshold
-        idx = recommended_team(teams, member['division'], is_by_division)
+        excluded_teams_index = [idx for idx, team in enumerate(teams)
+                                if len(team) >= maximum_members_per_team]
+        idx = recommended_team(teams, member['division'],
+                               is_by_division, excluded_teams_index)
 
         teams[idx].append(member)
         remainding_members -= 1
@@ -125,9 +149,9 @@ def generate_upgrading_teams(members, total_teams, excluded_divisions=[]):
                            if not member['isKabinet'] and not member['isMaba']]
 
     # insert to the teams in a orderly fashion
-    insert_members(teams, kabinets)
-    insert_members(teams, mabas)
-    insert_members(teams, kating_non_kabinets)
+    insert_members(teams, total_teams, kabinets)
+    insert_members(teams, total_teams, mabas)
+    insert_members(teams, total_teams, kating_non_kabinets)
 
 
     return teams
