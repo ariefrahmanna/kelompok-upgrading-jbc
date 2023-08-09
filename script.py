@@ -47,7 +47,15 @@ def recommended_team(
 
     By default, the recommended team will be set to a team's lacking member.
     It can be changed on a team's lacking division by setting the variable
-    `on_lacking_division` to true.
+    `on_divisions` to true.
+
+    This condition will ultimately be override to default if the there is no
+    any reccomended teams based on the division, with the condition that the
+    maximum members is met.
+
+    This condition will automatically default to the standard setting if no
+    recommended teams are available based on the division, provided that
+    `maximum_members` has been reached.
     """
 
     lacking_teams = get_lacking_teams(teams)
@@ -109,7 +117,7 @@ def insert_members(teams, total_teams, members):
     Note that the variable `teams` will be updated.
 
     Each team will be first insert based off a team's least membered division,
-    until a threshold is met that changes the condition to least membered team.
+    until a condition is met that changes the condition to least membered team.
     """
 
     # minimum amount of members needed to be inserted based on division
