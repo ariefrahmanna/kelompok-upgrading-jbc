@@ -1,0 +1,764 @@
+[
+    {
+        "fullName": "Naufal Rafif Teddyantho",
+        "division": "Inti",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Rakha Putra Pebri Yandra",
+        "division": "Inti",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Diandra Elsamayori",
+        "division": "Inti",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Fauziah Azhima",
+        "division": "Inti",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Aura Gista Irgina Putri ",
+        "division": "EO",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Pebrilyanti Doya Wisudawati",
+        "division": "EO",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Aghni Wirdha Hutaminingrum",
+        "division": "EO",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Laura Tsanaullaila",
+        "division": "EO",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Ignasius Jonathan ",
+        "division": "EO",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "James Hestu Satria",
+        "division": "EO",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Kayla Zhafira Ardinov",
+        "division": "EO",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Muhammad Fairuz Ismayana",
+        "division": "EO",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Mochamad Farhan Badruzzaman",
+        "division": "EO",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Muhammad Ikramulhaqqi",
+        "division": "EO",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Octamevia Inkaputri Azzahra",
+        "division": "EO",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Syahreza Adnan Al Azhar",
+        "division": "EO",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Tsamara Khairunnisa Fadhilah",
+        "division": "EO",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Amalia Nurul Maulida Pratiwi",
+        "division": "CO",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Jasmine Andraina Hamidah Wijayanto",
+        "division": "CO",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Muhammad Arvin Zulfikar",
+        "division": "CO",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Aaron James Effendi",
+        "division": "CO",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Adlina Azizan Muti",
+        "division": "CO",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Azzainah Husnuami Ode",
+        "division": "CO",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Dinar Khansa Salsabila",
+        "division": "CO",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Febriyanti Nurul Hidayah",
+        "division": "CO",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Fida Yuzida Hasnah",
+        "division": "CO",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Nadhira Salsabila Vanka",
+        "division": "CO",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Aurelia Putri Pramudita",
+        "division": "CO",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Azzahra Humaira Hasibuan",
+        "division": "CO",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Afif Arif Mustofa",
+        "division": "CO",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Firstki Aditya Fernanda",
+        "division": "CO",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Fitri Rahmalia",
+        "division": "CO",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Miftahul Falah",
+        "division": "CO",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Nadya Octaviany",
+        "division": "CO",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Shah Jehan Basrul",
+        "division": "CO",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Vianda Farras Fatihah",
+        "division": "CO",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Priya Mita Hartati Qhusna",
+        "division": "CO",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Gusti Muhammad Daffa Abdillahsyah",
+        "division": "CO",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Adesafa Ayu W",
+        "division": "CO",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Ariana Amelia Ratnadewi",
+        "division": "CO",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Anila Dwi Lestari",
+        "division": "CO",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Anindhita Febriandini",
+        "division": "CO",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Atiyah Zahra",
+        "division": "CO",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Fitrotin Nadzilah",
+        "division": "CO",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Hana Kamila Naura Yasmin",
+        "division": "CO",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Zunaira Silma",
+        "division": "CO",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Rismawan Maulana Sidiq",
+        "division": "LOA",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Raissa Arsya Elwahshifa Nouri",
+        "division": "LOA",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Annisa Fauziah",
+        "division": "LOA",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Arief Rahman",
+        "division": "LOA",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Benedict Davin",
+        "division": "LOA",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Berlian Amanda Laksana",
+        "division": "LOA",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Deo Nur Febryan",
+        "division": "LOA",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Farrel Asyrofil Irsyad",
+        "division": "LOA",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Irda Syahrani Tamsir ",
+        "division": "LOA",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Muhammad Naufal",
+        "division": "LOA",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Nadia Mutia Hanin",
+        "division": "LOA",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Nisrina Ikbar",
+        "division": "LOA",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Raisa Ghania",
+        "division": "LOA",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Sheila Deninta Maharani",
+        "division": "LOA",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Stefanus Jesano Pramatana",
+        "division": "LOA",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Fahmi Agung Maulana",
+        "division": "LoC",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Muhammad Avisenna Kusumadani",
+        "division": "LoC",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Grace Sintya M Sianturi",
+        "division": "LoC",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Arindhani Sekarini",
+        "division": "LoC",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Arkan Winas",
+        "division": "LoC",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Fadila Agita Hanief",
+        "division": "LoC",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Glend Aldo Marcelino",
+        "division": "LoC",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Muhammad Ariq Prabaswara",
+        "division": "LoC",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Muhammad Ziyan Haitan",
+        "division": "LoC",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Nikoleta Kinanthi",
+        "division": "LoC",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Puspa Wijayanti",
+        "division": "LoC",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Raihan Adrian",
+        "division": "LoC",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Raikkonen",
+        "division": "LoC",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Ridwan Abdurahman",
+        "division": "LoC",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Salwa Aulia Nissa",
+        "division": "LoC",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Sesilya Rahmi",
+        "division": "LoC",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Indryana Rahmadhini",
+        "division": "3D",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Salwa Sabina P",
+        "division": "3D",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Agung Hadi Winoto",
+        "division": "3D",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Ahmad Raihan Anugrah",
+        "division": "3D",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Alifya Chairunnisa",
+        "division": "3D",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Alya Nur Azizah",
+        "division": "3D",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Aqilah Aditya Perkasa",
+        "division": "3D",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Danish Hasna Ayudya",
+        "division": "3D",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Eka Nadiyah Purwaniati",
+        "division": "3D",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Gede Bagus Krishnanditya Merta",
+        "division": "3D",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Gede Dipta Narayana",
+        "division": "3D",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Indira Agustia Garini",
+        "division": "3D",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Nadya Widdy Astuti",
+        "division": "3D",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Safrina Auriya Anantasya Agustine",
+        "division": "3D",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Salsabila Diah",
+        "division": "3D",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Refli Adi Fatwa",
+        "division": "MPR",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Nur Imam Muarif Bur",
+        "division": "MPR",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Aisyah Ali Putri",
+        "division": "MPR",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Erna Febriyanti",
+        "division": "MPR",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Ilham Satria",
+        "division": "MPR",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Indah Fitri Amelia",
+        "division": "MPR",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Jihan Rizkyta Fitri",
+        "division": "MPR",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Kalila Queentania",
+        "division": "MPR",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Karimah Khairun Niswah",
+        "division": "MPR",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Kayla Putri Aurelia",
+        "division": "MPR",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Lingga Sundanu Jaya",
+        "division": "MPR",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Nur Inayatillah Kurnianto",
+        "division": "MPR",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Inggit Yeira Budi Agranata",
+        "division": "Sponsorship",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Tisa Subiarti",
+        "division": "Sponsorship",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Natasha Alflashya Kristy",
+        "division": "Sponsorship",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Fikri Firmansyah",
+        "division": "Sponsorship",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Kemal Sadewo",
+        "division": "Sponsorship",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Nadya Sri Andriani",
+        "division": "Sponsorship",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Nikita Gradiana Shahiesa",
+        "division": "Sponsorship",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Pipit Regina",
+        "division": "Sponsorship",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Rabih Akbar Nurdin",
+        "division": "Sponsorship",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Roosita Azizah Rachma Hanifah",
+        "division": "Sponsorship",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Tirza Dwi Ningrum",
+        "division": "Sponsorship",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Yusry Anandita Yulianti",
+        "division": "Sponsorship",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Indah Sari Rahayu",
+        "division": "Fundraising",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Hafizh Riyandi Fawwaz",
+        "division": "Fundraising",
+        "isMaba": false,
+        "isKabinet": true
+    },
+    {
+        "fullName": "Azhara Rahma Effendi",
+        "division": "Fundraising",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Izzah Khairiyah",
+        "division": "Fundraising",
+        "isMaba": false,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Jose Vidi Imanuel",
+        "division": "Fundraising",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Muhammad Haqqi Maulana",
+        "division": "Fundraising",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Najla Mahfuzah Busran",
+        "division": "Fundraising",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Nathania Salsabila",
+        "division": "Fundraising",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Nerlis Fitria Nurani",
+        "division": "Fundraising",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Puri Lalita Anagata",
+        "division": "Fundraising",
+        "isMaba": true,
+        "isKabinet": false
+    },
+    {
+        "fullName": "Rahmanisa",
+        "division": "Fundraising",
+        "isMaba": false,
+        "isKabinet": false
+    }
+]
