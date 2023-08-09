@@ -52,10 +52,6 @@ def recommended_team(
     This condition will ultimately be override to default if the there is no
     any reccomended teams based on the division, with the condition that the
     maximum members is met.
-
-    This condition will automatically default to the standard setting if no
-    recommended teams are available based on the division, provided that
-    `maximum_members` has been reached.
     """
 
     lacking_teams = get_lacking_teams(teams)
@@ -65,7 +61,6 @@ def recommended_team(
     if maximum_members is not None:
         excluded_teams_index = [idx for idx, team in enumerate(teams)
                                 if len(team) >= maximum_members]
-
 
     for excluded_team_index in excluded_teams_index:
         if excluded_team_index in lacking_teams:
