@@ -8,6 +8,7 @@ TOTAL_TEAMS = 6
 DIVISIONS = ['Inti', 'EO', 'CO', 'LOA', 'LoC', '3D',
              'MPR', 'Sponsorship', 'Fundraising']
 EXCLUDED_DIVISIONS = ['LOA']
+EXCLUDED_MEMBERS = []
 
 
 def get_lacking_teams(teams):
@@ -139,12 +140,13 @@ def insert_members(teams, total_teams, members):
         total_members -= 1
 
 
-def generate_upgrading_teams(members, total_teams, excluded_divisions=[]):
+def generate_upgrading_teams(members, total_teams, excluded_divisions=[], excluded_members=[]):
     teams = [[] for _ in range(total_teams)]
 
     # filter out excluded divisions
     filtered_members = [member for member in members
-                        if member['division'] not in excluded_divisions]
+                        if member['division'] not in excluded_divisions
+                        and member['fullName'] not in excluded_members]
 
     # seperate each members based on specific attribtutes
     kabinets = [member for member in filtered_members if member['isKabinet']]
@@ -168,7 +170,8 @@ if __name__ == '__main__':
     with open(DATA_PATH, 'r') as json_file:
         data = json.load(json_file)
 
-    teams = generate_upgrading_teams(data, TOTAL_TEAMS, EXCLUDED_DIVISIONS)
+    teams = generate_upgrading_teams(data, TOTAL_TEAMS, EXCLUDED_DIVISIONS,
+                                     EXCLUDED_MEMBERS)
 
 
     # export teams to csv format
