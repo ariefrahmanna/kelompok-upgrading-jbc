@@ -22,7 +22,7 @@ def get_lacking_teams(teams):
 
 def get_lacking_division(teams, division):
     """
-    Returns the indexes of teams that is still lackingin a specified division.
+    Returns the indexes of teams that is still lacking in a specified division.
     """
 
     filtered_teams = [[member for member in team
@@ -150,13 +150,13 @@ def generate_upgrading_teams(members, total_teams, excluded_divisions=[]):
     kabinets = [member for member in filtered_members if member['isKabinet']]
     mabas = [member for member in filtered_members
              if not member['isKabinet'] and member['isMaba']]
-    kating_non_kabinets = [member for member in filtered_members
+    non_mabinets = [member for member in filtered_members
                            if not member['isKabinet'] and not member['isMaba']]
 
     # insert to the teams in a orderly fashion
     insert_members(teams, total_teams, kabinets)
     insert_members(teams, total_teams, mabas)
-    insert_members(teams, total_teams, kating_non_kabinets)
+    insert_members(teams, total_teams, non_mabinets)
 
 
     return teams
@@ -205,7 +205,7 @@ if __name__ == '__main__':
             divisions = {}
             mabas = 0
             kabinets = 0
-            kating_non_kabinets = 0
+            non_mabinets = 0
 
             # update each division's value
             for division in DIVISIONS:
@@ -224,13 +224,13 @@ if __name__ == '__main__':
                     if member['isMaba']:
                         mabas += 1
                     else:
-                        kating_non_kabinets += 1
+                        non_mabinets += 1
 
             content = {
-                'total': mabas + kabinets + kating_non_kabinets,
+                'total': mabas + kabinets + non_mabinets,
                 'mabas': mabas,
                 'kabinets': kabinets,
-                'katingNonKabinets': kating_non_kabinets,
+                'nonMabinets': non_mabinets,
                 'divisions': divisions,
             }
 
@@ -238,7 +238,7 @@ if __name__ == '__main__':
             contents[f'Team {i+1}'] = content
 
         # write to json file
-        output = json.dumps(contents, indent=4, separators=(',', ': '))
+        output = json.dumps(contents, indent=4)
         json_file.write(output)
 
 
