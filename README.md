@@ -40,9 +40,10 @@ By default, the total team is set to 6. However, it is possible to adjust this v
 TOTAL_TEAMS = 6
 ```
 
-To anticipate any changes for the divisions in the future, you can manually rewrite the divisions in a list structure. Any other division that needs to be excluded can also be include within the script file.
+To anticipate any changes for the divisions in the future, you can manually rewrite the divisions in a list structure. Any other divisions or members that needs to be excluded can also be include within the top of the script file.
 
 ```py
 DIVISIONS = ['Inti', 'EO', 'CO', 'LOA', ...]
 EXCLUDED_DIVSIONS = ['LOA', ...]
+EXCLUDED_DIVSIONS = ['Rakha Putra Pebri Yandra', ...]
 ```
