@@ -121,7 +121,7 @@ def insert_members(teams, total_teams, members):
     current_max_members = max([len(team) for team in teams])
     total_members = len(members)
     empty_slots = sum([current_max_members - len(team) for team in teams])
-    remaining_members = (total_members - empty_slots)
+    remaining_members = total_members - empty_slots
     max_members = remaining_members // total_teams + current_max_members
 
     if remaining_members % total_teams > 0:
